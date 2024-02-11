@@ -1,9 +1,10 @@
+
 const weatherApi = {
-    key: '9f23b56e8dcad8299bf4e5a2a3fc932b',
+    key: 'fd8c23132f7fcad8d8015de662a2566c',
     baseUrl: 'https://api.openweathermap.org/data/2.5/weather'
 }
 
-//anonymous function
+
 //adding event listener key press of enter
 let searchInputBox = document.getElementById('input-box');
 searchInputBox.addEventListener('keypress', (event) => {
@@ -95,9 +96,9 @@ function dateManage(dateArg) {
 // function for the dynamic background change  according to weather status
 function changeBg(status) {
     if (status === 'Clouds') {
-        document.body.style.backgroundImage = 'url(img/cloudy.gif)';
+        document.body.style.backgroundImage = 'url(img/clouds.jpg)';
     } else if (status === 'Rain') {
-        document.body.style.backgroundImage = 'url(img/rain.gif)';
+        document.body.style.backgroundImage = 'url(img/rainy.jpg)';
     } else if (status === 'Clear') {
         document.body.style.backgroundImage = 'url(img/clear.jpg)';
     }
